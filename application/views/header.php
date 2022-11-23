@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>" >
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
 
     <title><?= $title ?></title>
 </head>
@@ -24,11 +24,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item <?= $title == 'Data Murid' ? 'active' : '' ?>">
                     <a class="nav-link" href="<?= base_url('murid'); ?>">Murid</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= $title == 'Data Dosen' ? 'active' : '' ?>">
                     <a class="nav-link" href="<?= base_url('dosen'); ?>">Dosen</a>
+                </li>
+                <li class="nav-item <?= $title == 'Data Dosen' ? 'active' : '' ?>">
+                    <a class="nav-link" href="<?= base_url('auth/logout'); ?>" onclick="return confirm('Apakah yakin ingin logout ?');">Logout</a>
                 </li>
 
             </ul>
