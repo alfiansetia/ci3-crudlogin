@@ -30,7 +30,7 @@
                 <li class="nav-item <?= $title == 'Data Dosen' ? 'active' : '' ?>">
                     <a class="nav-link" href="<?= base_url('dosen'); ?>">Dosen</a>
                 </li>
-                <li class="nav-item <?= $title == 'Data Dosen' ? 'active' : '' ?>">
+                <li class="nav-item">
                     <a class="nav-link" href="<?= base_url('auth/logout'); ?>" onclick="return confirm('Apakah yakin ingin logout ?');">Logout</a>
                 </li>
 
