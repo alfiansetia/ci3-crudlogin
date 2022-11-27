@@ -53,11 +53,11 @@ class Login extends CI_Controller
                 }
             } else {
                 $this->session->set_flashdata('message', '<script>alert("Password Salah !") </script>');
-                redirect('auth');
+                redirect('login');
             }
         } else {
             $this->session->set_flashdata('message', '<script>alert("Alamat email belum terdaftar !") </script>');
-            redirect('auth');
+            redirect('login');
         }
     }
 
@@ -68,6 +68,6 @@ class Login extends CI_Controller
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('role');
         $this->session->set_flashdata('success', '<script>alert("Logout Berhasil !") </script>');
-        redirect('auth');
+        redirect('login');
     }
 }
