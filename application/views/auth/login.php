@@ -19,7 +19,7 @@
                 Silahkan Login
             </div>
             <div class="card-body">
-                <form method="POST" action="<?= base_url('auth') ?>">
+                <form method="POST" action="<?= base_url('login') ?>">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" name="email" class="form-control" id="email" value="<?= set_value('email') ?>" autofocus>
