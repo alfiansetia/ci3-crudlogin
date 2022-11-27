@@ -7,7 +7,7 @@ class Dashboard extends CI_Controller
     {
         parent::__construct();
         if (!$this->session->userdata('email')) {
-            redirect('auth');
+            redirect('login');
         }
         $this->load->model(['User_model']);
     }
