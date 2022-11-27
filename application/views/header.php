@@ -31,7 +31,7 @@
                     <a class="nav-link" href="<?= base_url('dosen'); ?>">Dosen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('auth/logout'); ?>" onclick="return confirm('Apakah yakin ingin logout ?');">Logout</a>
+                    <a class="nav-link" href="<?= base_url('login/logout'); ?>" onclick="return confirm('Apakah yakin ingin logout ?');">Logout</a>
                 </li>
 
             </ul>

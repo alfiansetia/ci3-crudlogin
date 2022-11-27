@@ -44,7 +44,7 @@ class Auth extends CI_Controller
                     'role'  => $user->role,
                 ];
                 $this->session->set_userdata($data);
-                if ($user->role == 1) {
+                if ($user->role == 'admin') {
                     $this->session->set_flashdata('message', '<script>alert("Selamat datang kembali Administrator ' . $user->nama . ' ") </script>');
                     redirect('dashboard');
                 } else {
