@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo(password_hash('12315', PASSWORD_DEFAULT));
+		// echo(password_hash('12315', PASSWORD_DEFAULT));
 		$this->load->view('welcome_message');
 	}
 }
